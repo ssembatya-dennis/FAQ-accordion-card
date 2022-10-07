@@ -12,46 +12,43 @@
       href="./images/favicon-32x32.png"
     />
 
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Frontend Mentor | FAQ Accordion Card</title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <main>
       <div class="accordion-card">
-        <div class="card__details">
-          <div class="card__illustration">
-            <img
-              src="images/illustration-box-desktop.svg"
-              alt="desktop box"
-              class="box icon"
+        <div class="card__illustration">
+          <img
+            src="images/illustration-box-desktop.svg"
+            sizes="(max-width: 500px)"
+            alt="desktop box"
+            class="box icon mobile-box"
+          />
+          <picture>
+            <source
+              media="(max-width: 768px)"
+              srcset="images/illustration-woman-online-desktop.svg"
             />
-            <picture>
-              <source
-                media="(max-width: 768px)"
-                srcset="images/illustration-woman-online-desktop.svg"
-              />
-              <source
-                media="(min-width: 500px)"
-                srcset="images/illustration-woman-online-mobile.svg"
-              />
-              <img
-                src="images/illustration-woman-online-mobile.svg"
-                alt="card image"
-                class="card__img"
-              />
-            </picture>
-          </div>
-          <div class="card__title">FAQ</div>
+            <source
+              media="(max-width: 500px)"
+              srcset="images/illustration-woman-online-mobile.svg"
+            />
+            <img
+              src="images/illustration-woman-online-mobile.svg"
+              alt="card image"
+              class="card__img"
+            />
+          </picture>
+        </div>
+        <div class="card__details">
+          <h2 class="card__title">FAQ</h2>
           <details>
             <summary>How many team members can I invite?</summary>
             <p>
@@ -98,7 +95,7 @@
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
+        >. Coded by <a href="#">Ssembatya Dennis Duncan</a>.
       </div>
     </main>
   </body>
