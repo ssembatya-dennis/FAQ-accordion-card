@@ -20,8 +20,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [FAQ accordion card challenge on Frontend Mentor](https://www.frontendmentor.io/solutions/faqaccordioncard-with-html-elements-details-and-summary-pnYAMRZjri)
+- Live Site URL: [FAQ accordion card challenge #live site](https://faq-accordion-card-eight-peach.vercel.app/)
 
 ### Built with
 
