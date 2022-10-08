@@ -35,8 +35,8 @@ main {
 }
 
 .accordion-card {
-  width: 920px;
-  height: 509px;
+  width: 92rem;
+  height: 50.9rem;
   display: flex;
   gap: 2rem;
   justify-content: space-between;
@@ -59,7 +59,7 @@ main {
 .card__illustration img {
   max-width: 100%;
   height: 100%;
-  transform: translateX(-46px);
+  transform: translateX(-50px);
 }
 
 .mobile-box {
@@ -75,27 +75,28 @@ main {
 
 .card__title {
   font-weight: 700;
-  font-size: 32px;
-  line-height: 40px;
+  font-size: 3.2rem;
   color: #1e1f36;
 }
+
+/*Accordion CSS styles*/
 
 details {
   width: 100%;
 }
 
 details:nth-child(even) {
-  margin: 6px 0;
+  margin: 0.6rem 0;
 }
 
 details > summary {
   position: relative;
   border-bottom: 1px solid rgba(119, 119, 119, 0.281);
-  padding: 8px;
+  padding: 0.8rem;
   padding-bottom: 2rem;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
+  font-size: 1.4rem;
+  line-height: 1.7;
   color: #4b4c5f;
   cursor: pointer;
   outline: none;
@@ -128,7 +129,7 @@ details > summary::-webkit-details-marker {
 
 details > p {
   font-weight: 400;
-  font-size: 12px;
+  font-size: 1.2rem;
   line-height: 1.8;
   color: #787887;
   border-bottom: 1px solid rgba(119, 119, 119, 0.281);
@@ -153,4 +154,69 @@ details[open] > p {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+/*Mobile Layout*/
+
+@media screen and (max-width: 425px) {
+  .accordion-card {
+    max-width: 24.3rem;
+    min-height: 64.3rem;
+    display: flex;
+    overflow: visible;
+    flex-direction: column;
+    margin: 10rem 0;
+    justify-content: flex-start;
+    gap: 0.5rem;
+  }
+
+  .card__illustration {
+    max-width: 100%;
+    height: 35%;
+    background-image: url(./images/bg-pattern-mobile.svg);
+    background-size: 22rem;
+    background-position: 10px 22px;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+
+  .card__illustration img {
+    max-width: 80%;
+    height: 90%;
+    transform: translate(22px, -79px);
+  }
+
+  .mobile-box {
+    display: inline-block;
+  }
+
+  .box-icon {
+    position: absolute;
+    top: 35px;
+    left: -8px;
+    width: 40%;
+    object-fit: contain;
+    z-index: 999;
+  }
+
+  .card__details {
+    padding: 0 2.4rem;
+    width: 100%;
+  }
+
+  .card__title {
+    font-size: 2.8rem;
+    text-align: center;
+  }
+
+  details > summary {
+    padding: 3px;
+    padding-bottom: 1rem;
+    font-weight: 400;
+    font-size: 10px;
+  }
+
+  .attribution {
+    font-size: 8px;
+  }
 }
